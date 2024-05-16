@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Historia Interactiva</title>
+    <style>
+        #story {
+            margin: 20px;
+        }
+        #choices {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="story">Una vez, en un reino muy lejano...</div>
+    <div id="choices">
+        <button onclick="choice1()">Explorar el bosque</button>
+        <button onclick="choice2()">Visitar el castillo</button>
+    </div>
+
+    <script>
+        function choice1() {
+            document.getElementById('story').innerHTML = 'Decides explorar el bosque. Te encuentras con un animal misterioso.';
+            document.getElementById('choices').innerHTML = '<button onclick="choice3()">Hablar con el animal</button><button onclick="choice4()">Ignorar al animal</button>';
+        }
+
+        function choice2() {
+            document.getElementById('story').innerHTML = 'Decides visitar el castillo. Te encuentras con el rey.';
+            document.getElementById('choices').innerHTML = '<button onclick="choice5()">Hablar con el rey</button><button onclick="choice6()">Ignorar al rey</button>';
+        }
+
+        // Agrega más funciones aquí para continuar la historia...
+    </script>
+</body>
+</html>

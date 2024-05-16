@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas frecuentes</title>
+    <style>
+      .faq-question {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        margin-bottom: 10px;
+      }
+      .faq-answer {
+        display: none;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        margin-bottom: 10px;
+      }
+      body {
+        font-family: "Oswald", sans-serif;
+        text-align: center;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #ffd700;
+        color: #000000;
+        padding: 10px 0;
+      }
+      h1 {
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin: 0;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>ÉXITO</h1>
+      </header>
+      <h1>nuestros articulos</h1>
+      <article>
+        <h2>iPhone 13 Pro Max</h2>
+        <img
+          src="https://www.losdistribuidores.com/wp-content/uploads/2021/10/iphone-13-pro-2.jpg"
+          alt="iphone 13 pro max"
+          width="463"
+          height="500"
+        />
+        <p><strong>Pantalla:</strong> Super Retina XDR de 6.7 pulgadas</p>
+        <p>
+          <strong>Cámara:</strong> Sistema de triple cámara de 12 MP con modo
+          nocturno
+        </p>
+        <p><strong>Procesador:</strong> Chip A15 Bionic</p>
+        <p><strong>Capacidad:</strong> Hasta 1 TB de almacenamiento</p>
+        <p>
+          <strong>Batería:</strong> Duración de hasta 28 horas de reproducción de
+          video
+        </p>
+      </article>
+      <br />
+      <hr />
+      <br />
+      <article>
+        <h2>iPhone 12 Mini</h2>
+        <img
+          src="https://www.apple.com/newsroom/images/product/iphone/geo/apple_iphone-12_2-up_geo_10132020_inline.jpg.large.jpg"
+          alt="telefono"
+          width="463"
+          height="500"
+        />
+        <p><strong>Pantalla:</strong> Super Retina XDR de 5.4 pulgadas</p>
+        <p>
+          <strong>Cámara:</strong> Sistema de doble cámara de 12 MP con modo noche
+        </p>
+        <p><strong>Procesador:</strong> Chip A14 Bionic</p>
+        <p><strong>Capacidad:</strong> Hasta 256 GB de almacenamiento</p>
+        <p>
+          <strong>Batería:</strong> Duración de hasta 15 horas de reproducción de
+          video
+        </p>
+      </article>
+      <br />
+      <hr />
+      <br />
+      <article>
+        <h2>Samsung Galaxy S21 Ultra</h2>
+        <img
+          src="https://m.media-amazon.com/images/I/81caRKlA-zL._AC_SL1500_.jpg"
+          alt="telefono"
+          width="463"
+          height="500"
+        />
+        <p><strong>Pantalla:</strong> Dynamic AMOLED 2X de 6.8 pulgadas</p>
+        <p>
+          <strong>Cámara:</strong> Sistema de cuádruple cámara de 108 MP con zoom
+          óptico de 10x
+        </p>
+        <p>
+          <strong>Procesador:</strong> Exynos 2100 (Global) / Snapdragon 888 (USA)
+        </p>
+        <p><strong>Capacidad:</strong> Hasta 512 GB de almacenamiento</p>
+        <p>
+          <strong>Batería:</strong> Duración de hasta 25 horas de conversación
+        </p>
+      </article>
+      <br />
+      <hr />
+      <br />
+      <article>
+        <h2>Samsung Galaxy Note 20 Ultra</h2>
+        <img
+          src="https://blog.tiendamia.com/wp-content/uploads/2024/01/51gscWOENL._AC_.jpg"
+          alt="telfono"
+          width="463"
+          height="500"
+        />
+        <p><strong>Pantalla:</strong> Dynamic AMOLED 2X de 6.9 pulgadas</p>
+        <p>
+          <strong>Cámara:</strong> Sistema de triple cámara de 108 MP con zoom
+          óptico de 5x
+        </p>
+        <p>
+          <strong>Procesador:</strong> Exynos 990 (Global) / Snapdragon 865 Plus
+          (USA)
+        </p>
+        <p><strong>Capacidad:</strong> Hasta 512 GB de almacenamiento</p>
+        <p>
+          <strong>Batería:</strong> Duración de hasta 34 horas de conversación
+        </p>
+      </article>
+      <br /><br />
+
+    <div class="faq-question">¿Cuál es el horario de atención?</div>
+    <div class="faq-answer">
+      Nuestro horario de atención es de lunes a viernes de 9:00 a 18:00.
+    </div>
+
+    <div class="faq-question">¿Cómo puedo realizar un pedido?</div>
+    <div class="faq-answer">
+      Puedes realizar un pedido a través de nuestra página web o contactando con
+      nuestro equipo de ventas.
+    </div>
+
+    <div class="faq-question">¿Cuál es la política de devolución?</div>
+    <div class="faq-answer">
+      Aceptamos devoluciones dentro de los 30 días posteriores a la compra,
+      siempre que el producto esté en su estado original.
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const questions = document.querySelectorAll(".faq-question");
+
+        questions.forEach(function (question) {
+          question.addEventListener("click", function () {
+            const answer = this.nextElementSibling;
+            answer.style.display =
+              answer.style.display === "block" ? "none" : "block";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
